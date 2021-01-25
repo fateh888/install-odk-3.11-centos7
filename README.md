@@ -71,24 +71,26 @@ master.192.168.0.50.nip.io
 
 ```
 #git clone https://github.com/fateh888/install-odk-3.11-centos7.git
+
 #cd install-odk-3.11-centos7
+
 #./install-openshift.sh
 ```
 
-##AUTOMATION 
+## AUTOMATION 
 
 1. Define mandatory variables for the installation process
 
 
-# Domain name to access the cluster
+#Domain name to access the cluster
 ```
 # export DOMAIN=192.168.0.50.nip.io
 ```
-# User created after installation
+#User created after installation
 ```
 # export USERNAME=master
 ```
-# Password for the user
+#Password for the user
 ```
 # export PASSWORD=master
 ```
