@@ -61,22 +61,39 @@ master.192.168.0.50.nip.io
 #update following ENV
 
 ```
-export DOMAIN=192.168.0.50.nip.io
-export USERNAME=master
-export PASSWORD=master
+#export DOMAIN=192.168.0.50.nip.io
+#export USERNAME=master
+#export PASSWORD=master
 
 ```
 
 2. Clone this repo
 
 ```
-git clone https://github.com/fateh888/install-odk-3.11-centos7.git
-cd install-odk-3.11-centos7
-./install-openshift.sh
+#git clone https://github.com/fateh888/install-odk-3.11-centos7.git
+#cd install-odk-3.11-centos7
+#./install-openshift.sh
 ```
 
+##AUTOMATION 
 
-3. Define optional variables for the installation process
+1. Define mandatory variables for the installation process
+
+
+# Domain name to access the cluster
+```
+# export DOMAIN=192.168.0.50.nip.io
+```
+# User created after installation
+```
+# export USERNAME=master
+```
+# Password for the user
+```
+# export PASSWORD=master
+```
+
+2. Define optional variables for the installation process
 
 ```
 # Instead of using loopback, setup DeviceMapper on this disk.
@@ -84,7 +101,7 @@ cd install-odk-3.11-centos7
 $ export DISK="/dev/sda"
 ```
 
-4. Run the automagic installation script as root with the environment variable in place:
+3. Run the automagic installation script as root with the environment variable in place:
 
 ```
 curl https://raw.githubusercontent.com/fateh888/install-odk-3.11-centos7/new/install-openshift.sh | INTERACTIVE=false /bin/bash
