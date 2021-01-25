@@ -87,7 +87,7 @@ $ export DISK="/dev/sda"
 4. Run the automagic installation script as root with the environment variable in place:
 
 ```
-curl https://github.com/fateh888/install-odk-3.11-centos7/blob/new/install-openshift.sh | INTERACTIVE=false /bin/bash
+curl https://github.com/fateh888/install-odk-3.11-centos7/new/install-openshift.sh | INTERACTIVE=false /bin/bash
 ```
 
 ## Development
@@ -96,7 +96,7 @@ For development it's possible to switch the script repo
 
 ```
 # Change location of source repository
-$ export SCRIPT_REPO="https://github.com/fateh888/install-odk-3.11-centos7/blob/new/"
+$ export SCRIPT_REPO="https://github.com/fateh888/install-odk-3.11-centos7/new"
 $ curl $SCRIPT_REPO/install-openshift.sh | /bin/bash
 ```
 
