@@ -6,7 +6,7 @@
 
 ## Installation
 
-1. Create a VM with as descrption below:-
+1. Create a VM as description below:-
 
 ```
 #create a centos 7 vm with 50GB storage and 4GB RAM. 
